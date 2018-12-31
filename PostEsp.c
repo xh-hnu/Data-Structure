@@ -138,7 +138,7 @@ int PostEsp(char str[]){
 int main(int argc, char const *argv[])
 {
 	//(2*(12+1)-2)/2
-	char esp[] = {'(','2','*','(','1','2','+','1',')','-','2',')','/','2','#'};
+	char esp[] = "(2*(12+1)-2)/2#";
 	PostEsp(esp);
 	return 0;
 }
