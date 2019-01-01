@@ -125,9 +125,6 @@ void quickSort(DataType a[],int low,int high){
 	{
 		quickSort(a,j + 1,high);//对右端子集合进行递归排序
 	}
-	{
-		/* code */
-	}
 }
 
 int main(int argc, char const *argv[])
