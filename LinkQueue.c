@@ -1,23 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "LinkQueue.h"
 
 /*
 	队列需要申请内存空间，头指针，尾指针指向队头 和 队尾
 */
-
-typedef int DataType;
-//队列结点
-typedef struct node
-{
-	DataType data;
-	struct node *next;
-}LQNode;
-//链式队列
-typedef struct 
-{
-	LQNode *front;
-	LQNode *rear;
-}LQueue;
 
 int initLQueue(LQueue *LQ){
 	if (LQ -> front != NULL)
