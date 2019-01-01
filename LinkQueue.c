@@ -54,7 +54,12 @@ int LQDelete(LQueue *LQ,DataType *d){
 		*d = LQ -> front ->data;//获取数据
 		p = LQ -> front;
 		LQ -> front = p -> next;//头指针指向对头的下一个结点
-		free(p);//释放结点内存
+		if (LQ -> front != NULL)//
+		{
+			//这里如果释放了头指针的内存就会报错
+			free(p);//释放结点内存
+		}
+		
 	}
 	return 0;
 }
